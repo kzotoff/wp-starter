@@ -25,6 +25,7 @@ services:
       - PMA_HOST=mysql
       - PMA_USER=wordpress
       - PMA_PASSWORD=wordpress
+      - MYSQL_USER=wordpress
     ports:
       - 8081:80
 

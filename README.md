@@ -14,7 +14,7 @@ chmod -R a+w wp
 ```
 docker compose up
 ```
-5. Proceed to `localhost:8080`
+5. Proceed to http://localhost:8080
 
 6. Perform wordpress installation using the following parameters:
 	- database name: wordpress
@@ -27,3 +27,9 @@ docker compose up
 define('FS_METHOD', 'direct');
 ```
 There is a special place for user-defined things at the end of the file.
+
+### Notes and TODOs
+
+- phpMyAdmin will be available at http://localhost:8081
+- don't forget to change admin email after import duplicated sitefor development (`wp_options` table, then search for `admin_email`)
+- nginx and php are tuned to support very big files, so _All-in-One WP Migration and Backup_ import works perfectly
