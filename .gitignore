@@ -1,0 +1,4 @@
+nginx/logs/
+mysql/db/
+wp/*
+!wp/.gitkeep
